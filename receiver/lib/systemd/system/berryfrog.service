@@ -1,0 +1,13 @@
+[Unit]
+Description=Daemon for Berryfrog weather station
+
+[Service]
+Type=daemon
+ExecStart=/usr/bin/berryfrog \
+	--conf_file /etc/berryfrog/berryfrog.conf \
+	--log_file /var/log/berryfrog.log
+User=root
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multiuser.agent
