@@ -1,3 +1,6 @@
 [submodule "receiver/rc-switch"]
 	path = receiver/rc-switch
 	url = https://github.com/sui77/rc-switch.git
+[submodule "receiver/libconfig"]
+	path = receiver/libconfig
+	url = https://github.com/hyperrealm/libconfig.git
